@@ -50,7 +50,7 @@ html, body, figure, img, div, section, input, textarea, p, h1, h2, h3, ul, li, a
 /* BODY  */
 
 
-body{}
+/* ESTILIZAÇÃO PARA A VISUALIZAÇÃO DARKMODE */
 
 input:checked ~ main{
 
@@ -88,21 +88,12 @@ input:checked ~ footer{
 
 }
 
-
 main{
 
     transition: all ease-in-out .4s;
     background-color: #d9e2ee;
 
 }
-main .row{
-
-   /* display: flex;
-    flex-flow: row wrap; */
-
-}
-main .columm{}
-main .container{}
 
 main .container--column{
 
@@ -110,15 +101,13 @@ main .container--column{
 
 }
 
-
-/* classe para ocultar elementos da página*/
+/* CLASSE PARA OCULTAR ELEMENTOS DA PÁGINA*/
 
 .hidden{
 
     display: none;
 
 }
-
 
 .container{
 
@@ -128,25 +117,6 @@ main .container--column{
 
 }
 
-.row{}
-
-.column{}
-
-main .column{}
-
-main .column--esquerda{
-
- /*   flex-basis: 34%; */
-
-}
-
-main .column--direita{
-
-  /*  flex-basis: 66%; */
-
-}
-
-
 section{
 
     transition: all ease-in-out .4s;
@@ -155,12 +125,14 @@ section{
     border-bottom: 1px solid #d9e2ee;
 
 }
+
 section h2{
 
     font-size: 1.3rem;
     margin-bottom: 10px;
     
 }
+
 section p{
 
     font-size: 14px;
@@ -168,20 +140,19 @@ section p{
     line-height: 22px;
 
 }
-section ul{}
+
 section ul li{
 
     margin-bottom: 10px;
 
 }
+
 section ul li p{
 
     line-height: 22px;
 
 }
-section ul li p strong{}
-section ul li a{}
-section ul li h3{}
+
 section ul li p strong{
 
     font-weight: 500;
@@ -192,13 +163,11 @@ section ul li p strong{
 
 /* COLUNA LADO ESQUERDO */
 
-.container container--column{}
-
-.informacoesContatoPortifolio{}
 .informacoesContatoPortifolio_imagem{
 
     text-align: center;
 }
+
 .informacoesContatoPortifolio_imagem img{
 
     /*  deixando a borda da imagem redonda e definindo que ela será responsiva até uma largura máxima   */
@@ -208,40 +177,43 @@ section ul li p strong{
 
 }
 
-
 .informacoesContatoPortfolio_descricao{
     
     transition: all ease-in-out .4s;
     text-align: center; /* alinhando texto ao centro da página*/
 
 }
+
 .informacoesContatoPortfolio_descricao h1{
 
 font-size: 1.5rem;   /* definindo tamanho da fonte relativo a tag root(pai) */
 
 }
+
 .informacoesContatoPortfolio_descricao h2{
 
     font-size: 14px;
     font-weight: normal; /* definindo espessura da fonte */
    
 }
+
 .informacoesContatoPortfolio_descricao ul{
 
     margin-top: 20px;
 }
+
 .informacoesContatoPortfolio_descricao ul li{
 
     
     margin-bottom: 10px;
 }
+
 .informacoesContatoPortfolio_descricao ul li a{
 
     font-size: 14px;
     color: inherit;   /* herdando cor da tag pai */
 
 }
-
 
 .informaçoesContatoPortfolio_trocarModo {
 
@@ -275,9 +247,7 @@ font-size: 1.5rem;   /* definindo tamanho da fonte relativo a tag root(pai) */
 
 }
 
-
 /* COLUNA LADO DIREITO */
-
 
 .informacoesPerfilProfissional{
 
@@ -286,31 +256,6 @@ font-size: 1.5rem;   /* definindo tamanho da fonte relativo a tag root(pai) */
 
 }
 
-/* SESSÃO RESUMO DO PERFIL */
-.informacoesPerfilProfissional_resumo{}
-
-.informacoesPerfilProfissional_resumo h2{}
-.informacoesPerfilProfissional_resumo p{}
-
-
-/* SESSÃO RESUMO ESPECIALIDADE */
-.informacoesPerfilProfissional_especialidades{}
-
-.informacoesPerfilProfissional_especialidades h2{}
-.informacoesPerfilProfissional_especialidades ul{}
-.informacoesPerfilProfissional_especialidades ul li{}
-.informacoesPerfilProfissional_especialidades ul li p{}
-
-
-/* SESSÃO RESUMO CURSOS */
-.informacoesPerfilProfissional_cursos{}
-
-.informacoesPerfilProfissional_cursos h2{}
-.informacoesPerfilProfissional_cursos ul{}
-.informacoesPerfilProfissional_cursos ul li{}
-.informacoesPerfilProfissional_cursos ul li p{}
-
-
 /* SESSÃO EXPERIENCIA */
 .informacoesPerfilProfissional_experiencia{
 
@@ -318,10 +263,6 @@ font-size: 1.5rem;   /* definindo tamanho da fonte relativo a tag root(pai) */
     border: none;
 
 }
-
-.informacoesPerfilProfissional_experiencia h2{}
-.informacoesPerfilProfissional_expertransition{}
-
 
 /* FOOTER */
 
@@ -332,17 +273,13 @@ footer{
     transition: all ease-in-out .4s;
 
 }
-
+    
 footer nav ul li{
 
     display: inline-block;
 
 }
-footer nav ul li a{
 
-
-
-}
 footer nav ul li a img{
 
     width: 100%;
@@ -350,17 +287,14 @@ footer nav ul li a img{
     
 
 }
-.redesSociais{}
+
 .redesSociais_lista{
 
     text-align: center;
 
 }
 
-
-
 /* MEDIA QUERY  */
-
 
 @media screen and (min-width: 768px) {
 
