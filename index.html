@@ -7,44 +7,193 @@
         </title>
 
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- tag de compatibilidade com os navegadores microsoft Edge e IE-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- tag para tornar a página web responsiva -->
 
+        <!-- Tags para inclusão das fonts do google-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-
+        
+        <!-- Tag para referenciar o arquivo que contém os estilos css-->
+        <link rel="stylesheet" type="text/css" href="./src/style.css">
 
 
     </head>
-<!--BEM - Bloco - Elemento - Modificador-->
+    <!--BEM - Bloco - Elemento - Modificador-->
     <body>
-    <main>
+    <input type="checkbox"  class= "hidden" id="inputTrocarModo">
+
+     <main>
         
-        <div class="row">
+        <div class="container">
+            <div class="row">
 
-            <!-- conteúdos do lado esquerdo da página-->
-            <div class="columm columm--esquerda">
+                <!-- conteúdos do lado esquerdo da página-->
+                <div class="column column--esquerda">
 
-                <div class="informacoesContatoPortifolio_imagem">
+                    <div class="informacoesContatoPortifolio">
+                        <div class="container container--column">
+                            <figure class="informacoesContatoPortifolio_imagem">
+                                <img src="./src/img/Danilo.jpeg" alt="Danilo">
+                                <figcaption class="hidden">Imagem de perfil portifólio</figcaption>
+                            </figure>
+                        
 
-                    <figure>
-                        <img src="./src/img/Danilo.jpeg" alt="Danilo">
-                        <figcaption>Imagem de perfil portifólio</figcaption>
-                    </figure>
+                            <div class="informacoesContatoPortfolio_descricao">
+
+                                <h1> Danilo dos Santos</h1>
+                                <h2> Desenvolvedor júnior full-stack</h2>
+
+                                <ul>
+                                    <li>
+                                        <a href="mailto:danilodsantos1992@gmail.com">danilodsantos1992@gmail.com</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="tel:12991089910">(12)9 9108-9910</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Av. Professor Manoel César Ribeiro, 4100 - Cidade Nova - Pindamonhangaba/SP</a>  
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <div class="informaçoesContatoPortfolio_trocarModo">
+                                <label for="inputTrocarModo">
+                                <span></span>
+                                </label>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                
                 </div>
+                <!-- conteúdos do lado direito da página-->
+                <div class="column column--direita">
 
+                    <div class="informacoesPerfilProfissional">
+                        <div class="container container--column">
+                            <section class="informacoesPerfilProfissional_resumo">
+                                <h2> Perfil Profissional</h2>
+                                <p> Este é o espaço que visa descrever minhas habilidades e qualidades, com o objetivo de ter uma concepção bem resumida da minha pessoa.</p>
 
+                            </section>
+                        
+                            <!-- conteúdo Especialidades -->
+                            <section class="informacoesPerfilProfissional_especialidades">
+                                <h2> Especialidades</h2>
+                                <ul>
+                                    <li>
+                                        <p>HTML 5</p>
+                                    </li>
+                                    <li>
+                                        <p>CSS 3</p>
+                                    </li>
+                                    <li>
+                                        <p>JavaScript</p>
+                                    </li>
+                                    <li>
+                                        <p>ReactJS</p>
+                                    </li>
+                                    <li>
+                                        <p>Python</p>
+                                    </li>
+                                    <li>
+                                        <p>C++</p>
+                                    </li>
+                                </ul>
+
+                            </section>
+
+                            <!-- conteúdo Cursos -->
+                            <section class="informacoesPerfilProfissional_cursos">
+                                <h2>Cursos</h2>
+                                <ul>
+                                    <li>
+                                        <p>Semana Start sua carreira Dev - Kenzie Academy Brasil</p>
+                                    </li>
+                                    <li>
+                                        <p>Zero ao Python - Kenzie Academy</p>
+                                    </li>
+                                    <li>
+                                        <p>Zero ao JavaScript - Kenzie Academy Brasil</p>
+                                    </li>
+                                    <li>
+                                        <p>Olimpíadas da Programação - Kenzie Academy Brasil</p>
+                                    </li>
+                                    <li>
+                                        <p>Full-stack completo - Kenzie Academy Brasil</p>
+                                    </li>
+                            </ul>
+
+                            </section>
+
+                            <section class="informacoesPerfilProfissional_experiencia">
+                            <h2>Experiência</h2>
+                            <ul>
+                                <li>
+                                    <h3>Facilitador de treinamento</h3>
+                                    <p><strong>Nome da empresa: </strong>Kenzie Academy Brasil</p>
+                                    <p><strong>Período do emprego: </strong> Mar. de 2020 - atualmente - Duração 1 ano e 1 mês</p>
+                                </li>
+                                <li>
+                                    <h3>Facilitador de treinamento</h3>
+                                    <p><strong>Nome da empresa: </strong>Kenzie Academy Brasil</p>
+                                    <p><strong>Período do emprego: </strong> Mar. de 2020 - atualmente - Duração 1 ano e 1 mês</p>
+                                </li>
+                                <li>
+                                    <h3>Facilitador de treinamento</h3>
+                                    <p><strong>Nome da empresa: </strong>Kenzie Academy Brasil</p>
+                                    <p><strong>Período do emprego: </strong> Mar. de 2020 - atualmente - Duração 1 ano e 1 mês</p>
+                                </li>
+                            </ul>
+                            </section>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-
-            <!-- conteúdos do lado direito da página-->
-            <div class="columm columm--direita"></div>
-
-
         </div>
+     </main>
 
+     <footer>
+        <!--Tag de navegação(Criação de menus, e-readers)-->
+        <nav class="redesSociais">
+            <ul class="redesSociais_lista">
+                <li class="redesSociais_Linkedin">
+                    <a href="#" title="Ir para o meu Linkedin">
+                        <img src= "./src/img/linkedin.svg" alt="Linkedin">
+                    </a>
+                </li>
+                <li class="redesSociais_Github">
+                    <a href="#" title="Ir para a minha conta do Github">
+                        <img src= "./src/img/github.svg" alt="Github">
+                    </a>
+                </li>
+                <li class="redesSociais_Instagram">
+                    <a href="#" title="Ir para minha conta do Instragram">
+                        <img src= "./src/img/instagram.svg" alt="Instagram">
+                    </a>
+                </li>
+                <li class="redesSociais_Youtube">
+                    <a href="#" title="Ir para meu canal do Youtube">
+                        <img src= "./src/img/youtube.svg" alt="Youtube">
+                    </a>
+                </li>
+                <li class="redesSociais_Facebook">
+                    <a href="#" title="Ir para minha conta do Facebook">
+                        <img src= "./src/img/facebook.svg" alt="Facebook">
+                    </a>
+                </li>
+            </ul>
 
-    </main>
+        </nav>
+
+     </footer>
     </body>
 
 
